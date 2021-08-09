@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica </h1>
+    <p>Tente abrir esse site em varios dispositivos ou aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="desenhos/imagem_pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="desenhos/Imagem_media.png" type="image/png">
+        <img src="desenhos/Imagem_grande.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir Audio em HTML5</p>
+    <!--MP3 OGG WAV-->
+    <audio preload="metadata" controls loop>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="media/happy-mistake.mp3">Clique aqui para baixar o Arquivo MP3</a></p>
+
+    </audio>
+
+
+</body>
+</html> 
